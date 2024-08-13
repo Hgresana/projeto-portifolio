@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    background-color: #191919;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #dddddde3;
+    padding: 20px;
+}
+
+.nav-list a:hover{
+    color: white;
+}
+
+.main{
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    background-image: url("images/programador.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;padding-left: 10%;
+}
+
+.main h1{
+    color: white;
+    font-size: 45px;
+}
+
+.main p{
+    font-size: 20px;
+    color: rgb(58, 194, 199);
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+
+.call-to-action:hover{
+    transform: scale(1.06);
+}
+
+.main a{
+    text-decoration: none;
+}
+
+.about{
+    background-color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about div p{
+   margin: 20px 0;
+   text-align: justify;
+}
+.about img{
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projects p{
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.project-list{
+    margin: 8px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects img{
+    width: 25%;
+    margin: 0 0.5%;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.projects img:hover{
+    opacity: 1;
+}
+
+.action{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #191919;
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 1050px){
+    .main h1{
+        font-size: 30px;
+    }
+
+    .main p{
+        font-size: 15px;
+    }
+    
+    .about{
+        flex-direction: column; 
+        padding: 80px 0 0 0;
+    }
+
+    .about div{
+        max-width: 80%;
+        padding-right: 0;
+    }
+
+    .about img{
+        max-width: 70%;
+    }
+    
+    .projects img{
+        width: 30%;
+    }
+
+}
